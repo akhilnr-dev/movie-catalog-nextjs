@@ -3,6 +3,11 @@
 import { useState, useMemo } from 'react'
 import { movies, Movie } from '../data/movies'
 
+// Validate movies data on import
+if (!movies || !Array.isArray(movies)) {
+  throw new Error('Movies data is not properly loaded')
+}
+
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedGenre, setSelectedGenre] = useState('')
@@ -18,8 +23,8 @@ export default function Home() {
   const filteredMovies = useMemo(() => {
     let filtered = movies.filter(movie => {
       const matchesSearch = movie.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           movie.director.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           movie.description.toLowerCase().includes(searchTerm.toLowerCase())
+        movie.director.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        movie.description.toLowerCase().includes(searchTerm.toLowerCase())
 
       const matchesGenre = selectedGenre === '' || movie.genre.includes(selectedGenre)
 

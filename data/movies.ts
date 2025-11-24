@@ -541,14 +541,14 @@ export const movies: Movie[] = [
   },
   {
     id: 49,
-    title: "Alien",
-    year: 1979,
-    genre: ["Horror", "Sci-Fi"],
-    director: "Ridley Scott",
-    rating: 8.4,
-    duration: 117,
-    description: "After a space merchant vessel receives an unknown transmission, they land on a deadly planet.",
-    thumbnail: "https://via.placeholder.com/300x450/1f2937/ffffff?text=Alien"
+    title: "Psycho",
+    year: 1960,
+    genre: ["Horror", "Mystery", "Thriller"],
+    director: "Alfred Hitchcock",
+    rating: 8.5,
+    duration: 109,
+    description: "A Phoenix secretary embezzles money from her employer's client and goes on the run.",
+    thumbnail: "https://via.placeholder.com/300x450/1f2937/ffffff?text=Psycho"
   },
   {
     id: 50,
