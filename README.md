@@ -3,6 +3,7 @@
 A simple Next.js movie catalog SPA featuring 50 classic movies with metadata and thumbnails.
 
 ## Features
+###
 
 - Browse 50 curated movies with ratings, genres, and descriptions
 - Search functionality across titles, directors, and descriptions
