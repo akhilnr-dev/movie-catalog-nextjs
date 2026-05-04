@@ -1,5 +1,4 @@
 # Movie Catalog
-###
 
 A simple Next.js movie catalog SPA featuring 50 classic movies with metadata and thumbnails.
 
