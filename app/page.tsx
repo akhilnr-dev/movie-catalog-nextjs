@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <div className="container">
       <header className="header">
-        <h1>🎬 Movie Catalog</h1>
+        <h1>🎬 Movie Catalog - Preview</h1>
         <p>Discover and explore our collection of {movies.length} classic films</p>
       </header>
 
